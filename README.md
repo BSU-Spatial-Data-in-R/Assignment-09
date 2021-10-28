@@ -1,7 +1,7 @@
-# assignment-08
+# assignment-09
 This is the seventh assignment of the semester for HES 597. 
 
 ## Learning objectives for this assignment are:
-- learn some of the different plotting packages
-- explore how R instantiates the grammar of graphics
-- build choropleths and cartograms
+- Continue to practice building static maps with multiple layers
+- Practice adding text, ornaments, and other non-spatial info to maps
+- Build a simple interactive map using `plotly`
