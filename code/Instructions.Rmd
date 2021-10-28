@@ -22,7 +22,7 @@ _By the end of the assignment_ you should have a publication-quality static map 
 
 
 # Task 1: Load your libraries and build a dataframe
-I've added a number of new CONUS-wide datasets to the class folder for this week. These include... Use a combination of tabular joins, spatial joins, and extract to attach the data to the geography of interest (e.g.., states, counties, protected areas). You should end up with an `sf` that contains at least 4 variables beyond those that come directly with the geometry (e.g., area, name, etc).  Load the packages, the data, and make sure everything is projected here. Give me a sense for what you are hoping to map.
+I've added a number of CONUS-wide datasets to the class folder for this week (HMI, species richness). You are welcome to use these or begin to work with the data from your project. Use a combination of tabular joins, spatial joins, and extract to attach the data to the geography of interest (e.g.., states, counties, protected areas). You should end up with an `sf` that contains at least 4 variables beyond those that come directly with the geometry (e.g., area, name, etc).  Load the packages, the data, and make sure everything is projected here. Give me a sense for what you are hoping to map.
 
 
 # Task 2: Build a map with ggplot
