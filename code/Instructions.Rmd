@@ -1,7 +1,7 @@
 ---
 title: "Making better static maps and introducing interactive maps"
 author: "Matt Williamson"
-date: "10/20/2021"
+date: "10/27/2021"
 output: html_document
 ---
 
