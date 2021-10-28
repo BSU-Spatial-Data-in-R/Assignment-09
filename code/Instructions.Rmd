@@ -1,5 +1,5 @@
 ---
-title: "Making static maps"
+title: "Making better static maps and introducing interactive maps"
 author: "Matt Williamson"
 date: "10/20/2021"
 output: html_document
@@ -14,35 +14,35 @@ knitr::opts_chunk$set(echo = TRUE)
 
 The goals for this assignment are to:
 
-- practice making maps with the various packages
-- think about composition and the grammar of graphics
-- critique various maps
+- get you comfortable with adding layers to static maps
+- practice adding additional visual elements to improve the clarity and effectiveness of your maps
+- take a first step towards interactive maps
 
-_By the end of the assignment_ you should have several static maps displaying the datasets we've used in the last few weeks.
-
-# Task 1: Show me your ugly maps!!
-Find 2 examples of maps that you think are 'bad'. 
-_Question 1_ Why are they bad? What might improve them? 
-_Question 2_ Rely on the Healy and Wilke texts to provide some structure to your answers.
-
-# Task 2: Load your libraries and build a dataframe
-You can choose whichever datasets you'd like from the past several months as the subject for your mapping. You'll need to use at least one tabular join, one spatial join, and one extraction to create the dataframe. Load the packages, the data, and make sure everything is projected here. Give me a sense for what you are hoping to map.
+_By the end of the assignment_ you should have a publication-quality static map and a functional interactive map
 
 
-# Task 3: Build a map with Tmap
-Practice making a quick map with tmap. 
+# Task 1: Load your libraries and build a dataframe
+I've added a number of new CONUS-wide datasets to the class folder for this week. These include... Use a combination of tabular joins, spatial joins, and extract to attach the data to the geography of interest (e.g.., states, counties, protected areas). You should end up with an `sf` that contains at least 4 variables beyond those that come directly with the geometry (e.g., area, name, etc).  Load the packages, the data, and make sure everything is projected here. Give me a sense for what you are hoping to map.
 
 
-# Task 4: Build a choropleth with ggplot
-Your map should have a basemap, should rely on more than one aesthetic (color, transparency, etc), and combine multiple layers.
+# Task 2: Build a map with ggplot
+Your map should include a basemap that provides context (like from `ggmap` or elsewhere) and have at least 2 variables mapped to the aesthetics (color, transparency, etc) of the map. Your map should also include a aorth arrow and have the polygons labeled with an identifier (e.g., the abbreviation for state, the name of the county, etc). 
 
-# Task 5: Build 2 cartograms
-Follow the examples to build cartograms that display your region of interest based on variables other than area.
+_Question 1:_ How might you get all 4 of your variables to display on the map without overwhelming the viewer?
 
-_Question 3:_ Reflect on the different maps you've made, what do the different visualizations tell you about the data you plotted?
 
-_Question 4:_ How might you improve the maps you've made?
+# Task 3: Try a different basemap
+A major justification for using basemaps is their ability to provide the viewer with additional contest to help them locate your data "in a place". `ggmap` has a number of dfferent options that you can use. Use the code from Task 2 to make the same map, but with a different basemap.
 
-_Question 5:_ Is a map the best way to evaluate the data you worked with? Why or Why not?
+_Question 2:_ Compare the two maps (with the different basemaps). How might you approach deciding which basemap is the most appropriate for your map?
+
+# Task 4: Add an inset map
+Add an inset to your map that provides information on the location you are mapping.
+
+
+# Task 5: Convert your map into a plotly interactive map
+Follow the examples from the class webpage to build an interactive map. The map should use color to display 1 of your variables and use a "hover" window as a means of conveying the other variables.
+
+_Question 3:_ Compare the interactive map to the static map you've made. In what ways is the interactive map better? Worse? How might you improve the overall visualization (e.g., adding elements, removing elements, building multi-panel plots)?
 
 
